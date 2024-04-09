@@ -1,12 +1,15 @@
-<!-- registrerings_resultat.html -->
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Registrerings Resultat</title>
 </head>
 <body>
+<!-- Overskrift for registreringsresultat -->
 <h2>Registrerings Resultat</h2>
+<!-- Viser brugerens navn efter registrering -->
+<!-- th:text for at indsætte værdier fra Bruger objektet ind i HTML -->
 <p>Navn: <span th:text="${bruger.navn}">Navn</span></p>
+<!-- Viser brugerens email efter registrering -->
 <p>Email: <span th:text="${bruger.email}">Email</span></p>
 </body>
 </html>
